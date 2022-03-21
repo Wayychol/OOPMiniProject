@@ -4,7 +4,7 @@ import java.util.Random;
 public class Adventurer {
     private final String name;
     private int healingPoints = 5;
-    private int healthPoints = 5;
+    private int healthPoints = 10;
 
     // Constructor
     public Adventurer(String name) {
