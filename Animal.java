@@ -11,8 +11,8 @@ public class Animal {
 
         String[] types = {"Wolf", "Bear", "Deer"};
         this.name = types[r.nextInt(3)];
-        this.injuryPoints = r.nextInt(5)+1;
-        this.attackPoints = r.nextInt(5)+1;
+        this.injuryPoints = r.nextInt(11)+1;
+        this.attackPoints = r.nextInt(6)+1;
     }
 
     // Getters
