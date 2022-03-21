@@ -1,5 +1,6 @@
 import java.util.Random;
 
+
 public class Adventurer {
     private final String name;
     private int healingPoints = 5;
@@ -32,4 +33,9 @@ public class Adventurer {
         this.healthPoints = healthPoints;
     }
 
+    // Override Methods
+    @Override
+    public String toString() {
+        return "Adventurer " + getName() + ":\n\tHealing Points: " + getHealingPoints() + "\n\tHealth points: " + getHealthPoints();
+    }
 }

@@ -25,4 +25,10 @@ public class Animal {
     public int getAttackPoints() {
         return attackPoints;
     }
+
+    // Override Method
+    @Override
+    public String toString() {
+        return getName() + ":\n\tInjury Points: " + getInjuryPoints() + "\n\tAttack Points: " + getAttackPoints();
+    }
 }
