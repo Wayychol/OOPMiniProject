@@ -1,19 +1,17 @@
-import java.util.Random;
-
-public class Plant {
+public class Plant extends Encounterable{
     private final String name;
     private final int healingPoints;
     private final boolean poisonous;
 
+    // Constructor
     public Plant() {
-        Random r = new Random();
-
         String[] types = {"Berry", "Mint Leaf", "Daffodil", "Mushroom"};
-        this.name = types[r.nextInt(4)];
-        this.healingPoints = r.nextInt(4)+1;
-        this.poisonous = r.nextInt(4) == 2;
+        this.name = types[randomNumber(4)];
+        this.healingPoints = randomNumber(4)+1;
+        this.poisonous = randomNumber(4) == 2;
     }
 
+    // Getters
     public String getName() {
         return this.name;
     }
@@ -24,7 +22,7 @@ public class Plant {
         return this.poisonous;
     }
 
-    // Override Methods
+    // toString Method
     @Override
     public String toString() {
         return getName() + " with " + getHealingPoints() + " healing points";
